@@ -1,0 +1,147 @@
+﻿body {
+    font-family: 'Libre Baskerville', 'Roboto', 'Helvetica Neue', 'Helvetica', sans-serif;
+    margin: 0;
+    height: unset;
+    background-color: #c7dfc2;
+    /*background-image: url("background_pattern.webp");
+    background-repeat: repeat;*/
+}
+html {
+    --mdc-typography-headline1-font-family: 'Libre Baskerville', 'Roboto','Helvetica Neue','Helvetica',sans-serif;
+    --mdc-typography-headline2-font-family: 'Libre Baskerville', 'Roboto','Helvetica Neue','Helvetica',sans-serif;
+    --mdc-typography-headline3-font-family: 'Libre Baskerville', 'Roboto','Helvetica Neue','Helvetica',sans-serif;
+    --mdc-typography-headline4-font-family: 'Libre Baskerville', 'Roboto','Helvetica Neue','Helvetica',sans-serif;
+    --mdc-typography-headline5-font-family: 'Libre Baskerville', 'Roboto','Helvetica Neue','Helvetica',sans-serif;
+    --mdc-typography-headline6-font-family: 'Libre Baskerville', 'Roboto','Helvetica Neue','Helvetica',sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+
+.explore-box-card {
+    width: 20em;
+    margin: .6em;
+    margin-top: 0px;
+    cursor: default;
+}
+
+app {
+    display: unset;
+    height: unset;
+}
+
+.actual-button {
+    --mdc-theme-primary: papayawhip !important;
+}
+
+.horizontally-centered {
+    display: grid;
+    place-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.centered {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+
+.footer-text {
+    margin-left: .5em;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', sans-serif;
+    display: inline-block;
+    color: initial;
+    font-weight: normal;
+}
+
+.tooltip-text {
+    width: 12em;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 0em;
+    visibility: hidden;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 4px 4px 0 0;
+    position: absolute;
+    z-index: 1;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: small;
+}
+
+.triangle-bottom-left {
+    width: 0px;
+    height: 0px;
+    border-bottom: 2em solid #a2cf94;
+    border-left: 2em solid #a2cf94;
+    border-right: 2em solid transparent;
+    border-top: 2em solid transparent;
+}
+
+.fixed-bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+@media screen and (max-width: 600px) {
+    /* Tooltip text */
+    .tooltip .footer-text {
+        width: 12em;
+        bottom: 100%;
+        left: 50%;
+        margin-left: 0em;
+        visibility: hidden;
+        background-color: whitesmoke;
+        color: black;
+        text-align: center;
+        padding: 6px 0;
+        border-radius: 4px 4px 0 0;
+        position: absolute;
+        z-index: 1;
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: small;
+    }
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .footer-text {
+        visibility: visible;
+    }
+}
+
+/*# sourceMappingURL=.\Wedding\WeddingFrontend\Components\wwwroot\site.css.map */
